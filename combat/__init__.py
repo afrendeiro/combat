@@ -1,3 +1,3 @@
-from combat.combat import combat
+from .combat import combat
 
 combat
