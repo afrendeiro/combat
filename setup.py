@@ -20,15 +20,11 @@ except ImportError:
     from distutils.core import setup
     if sys.version_info < (2, 7):
         extra['dependencies'] = ['argparse']
-with open(os.path.join("combat", "_version.py"), 'r') as handle:
-    version = handle.readline().split()[-1].strip("\"'\n")
-
 
 # setup
 setup(
     name="combat",
     packages=find_packages(),
-    version=version,
     description="Empirical Bayes method to remove batch effects.",
     long_description="python / numpy / pandas / patsy version of ComBat for removing batch effects.",
     classifiers=[
