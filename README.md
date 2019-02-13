@@ -12,6 +12,12 @@ pip install git+https://github.com/afrendeiro/combat.git
 from combat import combat
 ```
 
+## Testing
+Requires `pytest`.
+```python
+pytest
+```
+
 ## References
 
     Johnson WE, Rabinovic A, Li C (2007). Adjusting batch effects in microarray
