@@ -4,6 +4,14 @@ python:
   - "3.6"
   - "2.7"
 
+env:
+  R_LIBS=$HOME/R_libs/
+
+cache:
+  directories:
+    - $HOME/R_libs
+    - $HOME/.cache/pip
+
 before_install:
   - sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty-cran35/" >> /etc/apt/sources.list'
   - gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
@@ -17,4 +25,4 @@ install:
   - pip install -r requirements.test.txt
 
 script:
-  - pytest --disable-warnings --show-capture=no tests/test_*.py
+  - pytest --disable-warnings tests/test_*.py
