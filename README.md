@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/afrendeiro/combat.svg?branch=master)](https://travis-ci.org/afrendeiro/combat)
+
 Combat
 ==========
 This is a fork of [Brent Pedersen's Python implementation of Combat](https://github.com/brentp/combat.py)
@@ -13,7 +15,8 @@ from combat import combat
 ```
 
 ## Testing
-Requires `pytest`.
+Currently tested on Travis for Python 2.7 and 3.6.
+
 ```python
 pytest
 ```
